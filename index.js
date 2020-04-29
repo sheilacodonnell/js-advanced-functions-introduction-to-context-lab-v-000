@@ -14,10 +14,11 @@ function createEmployeeRecords(records) {
 }
 
 function createTimeInEvent(record, dateStamp) {
+  let dateAndHour = dateStamp.split(" ")
   record.timeInEvents.push({
     type: "TimeIn",
-    date: dateStamp.split(" ")[0],
-    hour: parseInt(dateStamp.split(" ")[1])
+    date: dateAndHour[0],
+    hour: parseInt(dateAndHour[1])
   })
   
   return record
