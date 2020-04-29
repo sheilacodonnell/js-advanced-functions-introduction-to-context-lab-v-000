@@ -26,7 +26,7 @@ function createTimeInEvent(record, dateStamp) {
 function createTimeOutEvent(record, dateStamp) {
   let dateAndHour = dateStamp.split(" ")
   record.timeOutEvents.push({
-    type: "TimeIn",
+    type: "TimeOut",
     date: dateAndHour[0],
     hour: parseInt(dateAndHour[1])
   })
