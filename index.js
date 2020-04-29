@@ -46,5 +46,6 @@ function wagesEarnedOnDate(record, date) {
 
 function allWagesFor(record) {
   let hours = record.timeOutEvents.map(e => hoursWorkedOnDate(record, e.date))
-  return hours
+  let totalHours = reduce(hours)
+  return totalHours
 }
