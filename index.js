@@ -20,6 +20,15 @@ function createTimeInEvent(record, dateStamp) {
     date: dateAndHour[0],
     hour: parseInt(dateAndHour[1])
   })
-  
+  return record
+}
+
+function createTimeOutEvent(record, dateStamp) {
+  let dateAndHour = dateStamp.split(" ")
+  record.timeOutEvents.push({
+    type: "TimeIn",
+    date: dateAndHour[0],
+    hour: parseInt(dateAndHour[1])
+  })
   return record
 }
