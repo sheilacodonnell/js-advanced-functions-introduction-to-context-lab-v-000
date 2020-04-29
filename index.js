@@ -43,3 +43,7 @@ function wagesEarnedOnDate(record, date) {
   let hours = hoursWorkedOnDate(record, date)
   return hours * record.payPerHour
 }
+
+function allWagesFor(record) {
+  
+}
