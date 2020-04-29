@@ -49,3 +49,7 @@ function allWagesFor(record) {
   let totalHours = hours.reduce((total, currentValue) => total +currentValue)
   return totalHours * record.payPerHour
 }
+
+function calculatePayroll(records) {
+  return records.map(record => allWagesFor(record))
+}
