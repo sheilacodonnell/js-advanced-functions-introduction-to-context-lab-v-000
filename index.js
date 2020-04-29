@@ -17,7 +17,7 @@ function createTimeInEvent(record, dateStamp) {
   record.timeInEvents.push({
     type: "TimeIn",
     date: dateStamp.split(" ")[0],
-    hour: dateStamp.split(" ")[1]
+    hour: parseInt(dateStamp.split(" ")[1])
   })
   
   return record
