@@ -34,7 +34,7 @@ function createTimeOutEvent(record, dateStamp) {
 }
 
 function hoursWorkedOnDate(employee, date) {
-  let outHour = employee.find(timeOutEvents.date == date)
-  let inHour = employee.find(timeInEvents.date == date)
+  let outHour = employee.find(employee.timeOutEvents.date == date)
+  let inHour = employee.find(employee.timeInEvents.date == date)
   return outHour - inHour
 }
