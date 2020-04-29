@@ -10,5 +10,5 @@ function createEmployeeRecord(record) {
 }
 
 function createEmployeeRecords(records) {
-  records.map(record => createEmployeeRecord(record) )
+  return records.map(record => createEmployeeRecord(record) )
 }
