@@ -32,3 +32,7 @@ function createTimeOutEvent(record, dateStamp) {
   })
   return record
 }
+
+function hoursWorkedOnDate(employee, date) {
+  retuen employee.timeOutEvents.
+}
