@@ -8,3 +8,5 @@ function createEmployeeRecord(record) {
     timeOutEvents: []
   }
 }
+
+function 
