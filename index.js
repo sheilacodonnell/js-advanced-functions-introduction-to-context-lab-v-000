@@ -14,8 +14,10 @@ function createEmployeeRecords(records) {
 }
 
 function createTimeInEvent(record, dateStamp) {
-  return record.timeInEvents.push({
+  record.timeInEvents.push({
     type: "TimeIn",
     date: dateStamp.split(" ")[0]
   })
+  
+  return record
 }
