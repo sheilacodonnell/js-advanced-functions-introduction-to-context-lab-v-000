@@ -12,3 +12,7 @@ function createEmployeeRecord(record) {
 function createEmployeeRecords(records) {
   return records.map(record => createEmployeeRecord(record) )
 }
+
+function createTimeInEvent() {
+  
+}
