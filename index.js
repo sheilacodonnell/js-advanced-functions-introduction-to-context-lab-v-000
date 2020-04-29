@@ -9,4 +9,6 @@ function createEmployeeRecord(record) {
   }
 }
 
-function 
+function createEmployeeRecords(records) {
+  records.map(record => createEmployeeRecord(record) )
+}
