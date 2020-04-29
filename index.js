@@ -1,3 +1,3 @@
 function createEmployeeRecord(employee) {
-  let firstName = employee[0]
+  return firstName = employee[0]
 }
